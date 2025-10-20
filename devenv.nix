@@ -18,7 +18,11 @@
     enable = true;
     uv = {
       enable = true;
-      sync.enable = true;
+      sync.enable = false;
     };
   };
+
+  enterShell = ''
+    source .devenv/state/venv/bin/activate
+  '';
 }
